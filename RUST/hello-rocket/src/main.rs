@@ -6,6 +6,6 @@ fn index() -> &'static str {
 }
 
 #[launch]
-fn rocket() -> _ {
+fn rocket() -> _ {cargo build
     rocket::build().mount("/", routes![index])
 }

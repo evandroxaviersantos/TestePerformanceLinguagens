@@ -6,3 +6,4 @@ Debug
 .vscode
 obj
 target
+.vscode/launch.json
