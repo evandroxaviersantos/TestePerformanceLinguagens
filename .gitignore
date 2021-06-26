@@ -1,5 +1,5 @@
 *.dll
-NODE/Performance/ExpressApp1/node_modules/*.*
+NODE/Performance/ExpressApp1/node_modules/
 node_modules
 Debug
 .vs
