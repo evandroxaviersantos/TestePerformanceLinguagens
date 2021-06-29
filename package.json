@@ -1,0 +1,19 @@
+{
+  "name": "cargo",
+  "version": "1.0.0",
+  "description": "cargo install systemfd cargo-watch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arturbarth/TestePerformanceLinguagens.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arturbarth/TestePerformanceLinguagens/issues"
+  },
+  "homepage": "https://github.com/Arturbarth/TestePerformanceLinguagens#readme"
+}
