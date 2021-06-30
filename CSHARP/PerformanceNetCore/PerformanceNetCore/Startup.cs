@@ -13,7 +13,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using PerformanceNetCore.Data;
-using PerformanceNetCore.Repository;
 using PerformanceNetCore.Model;
 
 namespace PerformanceNetCore
