@@ -1,11 +1,11 @@
 #[macro_use] extern crate rocket;
 
 #[get("/ping")]
-fn index() -> &'static str {
+fn ping() -> &'static str {
     "Pong"
 }
 
 #[launch]
 fn rocket() -> _ {
-    rocket::build().mount("/", routes![index])
+    rocket::build().mount("/", routes![ping])
 }

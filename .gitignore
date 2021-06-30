@@ -7,3 +7,4 @@ Debug
 obj
 target
 .vscode/launch.json
+env
