@@ -3,7 +3,9 @@
 ## Metodologia
 - Realizar requisições ping/pong. Ex:
 ```java
-
+public String ping() {
+  return "pong";
+}
 ```
 
 
