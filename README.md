@@ -13,7 +13,7 @@ public String ping() {
 }
 ```
 
-### Requisições Get - 60 segundos executando / 100 Usuários (Threads). Média de 5 execuções com intervalo entre as mesas de 120 segundos.
+### Requisições Get - 60 segundos executando / 100 Usuários (Threads). Média de 5 execuções com intervalo entre as mesmas de 120 segundos.
 
 - Utilizado Apache JMeter.
 
