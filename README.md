@@ -35,3 +35,9 @@ public String ping() {
 - Delphi + Mormot
 
 
+
+# Configurações
+- Intel Core i9 10850K
+- 32GB RAM 3200
+
+
