@@ -13,7 +13,9 @@ public String ping() {
 }
 ```
 
-### Requisições Get - 60 segundos executando.
+### Requisições Get - 60 segundos executando / 100 Usuários (Threads).
+
+- Utilizado Apache JMeter.
 
 - No Java estou enfrentando um problema pois o mesmo consegue utilizar 100% do CPU por aproximadamente 40 segundos do teste, após isso a JVM para de "escalar" a API e o Throughput cai consideravelmente. Quando conseguir solucionar esse problema estarei atualizando os dados.
 
