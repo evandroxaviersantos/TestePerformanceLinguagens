@@ -6,21 +6,30 @@
 
 
 - Realizar requisições ping/pong. Ex:
-Essas requisições Ping/Pong nos permitem testar um método padrão em todas as linguagens, o que dá uma boa base de performance da linguagem/framework.
+Essas requisições Ping/Pong nos permitem testar um método padrão em todas as linguagens
 ```java
 public String ping() {
   return "pong";
 }
 ```
 
-- Realizar cadastro de clientes
+### Requisições Get - 60 segundos executando.
+
+- No Java estou enfrentando um problema pois o mesmo consegue utilizar 100% do CPU por aproximadamente 40 segundos do teste, após isso a JVM para de "escalar" a API e o Throughput cai consideravelmente. Quando conseguir solucionar esse problema estarei atualizando os dados.
+
+<img width="667" alt="Ping Pong API" src="https://user-images.githubusercontent.com/3423282/125724080-aa69fc49-e1b4-455a-b861-7303ddc841af.png">
+
+
+## Novas linguagens serão adicionadas aos poucos ao projeto de teste de performance.
+
+- Quer contribuir? Você pode! É só implementar sua API com a requisição "Ping/Pong" conforme descrito acima e enviar um Pull Request.
+
 
 
 ## Linguagens já implementadas:
 - .NET 5.0 / C#
 - Java Spring
 - GoLang
-- Delphi + Horse
 - Delphi + Mormot
 
 
