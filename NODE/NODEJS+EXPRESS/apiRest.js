@@ -66,7 +66,7 @@ if (cluster.isMaster) {
 	    db.query('INSERT INTO clientefb (NOME, CPF, ENDERECO) VALUES(?, ?, ?)', [req.body.nome, req.body.cpf, req.body.endereco], function(err, result) {		
         db.detach();
         });
-		res.send(req.body);
+		res.send('Inserido');
 	});
   })
 
