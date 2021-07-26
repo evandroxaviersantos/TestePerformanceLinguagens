@@ -1,4 +1,5 @@
 const express = require('express');
+const helmet = require('helmet')
 const port = 5001;
 const cluster = require('cluster');
 const totalCPUs = require('os').cpus().length;
@@ -37,6 +38,7 @@ if (cluster.isMaster) {
 } else {
   const app = express();
   app.disable('x-powered-by');
+  app.use(helmet());
   app.use(bodyParser.json());
   console.log('Worker PID:' + process.pid + ' Iniciou');
 
