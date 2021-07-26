@@ -36,6 +36,7 @@ if (cluster.isMaster) {
 
 } else {
   const app = express();
+  app.disable('x-powered-by');
   app.use(bodyParser.json());
   console.log('Worker PID:' + process.pid + ' Iniciou');
 
