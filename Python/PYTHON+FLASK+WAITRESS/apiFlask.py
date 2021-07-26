@@ -38,7 +38,7 @@ def clientes():
         sql   = "insert into CLIENTEDB (nome, cpf, endereco) values (?,?,?)"
         curPost.execute(sql, (dados.get('nome', ''),dados.get('cpf', ''),dados.get('endereco', '')))
         con.commit()
-        return  dados
+        return  '''Inserido'''
    
 
 if __name__ == "__main__":
