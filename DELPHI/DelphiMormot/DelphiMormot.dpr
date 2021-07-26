@@ -95,12 +95,16 @@ begin
 end;
 
 procedure CriarConexao(AcBanco: RawUTF8);
+var
+  i: integer;
 begin
   FoFirebirdDB := TSQLDBFireDACConnectionProperties.Create(
                   FIREDAC_PROVIDER[dFirebird],
                   AcBanco,
                   'sysdba',
                   'masterkey');
+  for i := 0 to 100 do
+    FoFirebirdDB.NewConnection;
 end;
 
 begin
