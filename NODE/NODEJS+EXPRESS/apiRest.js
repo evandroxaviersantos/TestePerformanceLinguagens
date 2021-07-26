@@ -1,10 +1,16 @@
 const express = require('express');
 const helmet = require('helmet')
+const csurf = require('csurf');
+const cookieParser = require('cookie-parser');
 const port = 5001;
 const cluster = require('cluster');
 const totalCPUs = require('os').cpus().length;
 var Firebird = require('node-firebird');
 var bodyParser = require('body-parser');
+
+const csrfMiddleware = csurf({
+  cookie: true
+});
 
 var FirebirdConfig = {};
  
@@ -40,6 +46,8 @@ if (cluster.isMaster) {
   app.disable('x-powered-by');
   app.use(helmet());
   app.use(bodyParser.json());
+  app.use(cookieParser());
+  app.use(csrfMiddleware);
   console.log('Worker PID:' + process.pid + ' Iniciou');
 
   app.get('/', (req, res) => {
